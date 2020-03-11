@@ -6,8 +6,9 @@ $home-image :url();
 @mixin easeOut {
     transition: all 0.5s ease-out;
 }
-
+@import 'config';
 @import 'menu';
+
 
 * {
     box-sizing: border-box;
@@ -31,7 +32,7 @@ h3 {
     font-weight: 400;
 
     &.lg-heading {
-        font-size: 6rem;
+        font-size: 5rem;
     } 
 
     &.sm-heading {
@@ -41,6 +42,7 @@ h3 {
     }
 }
 
+// Links
 a {
     color: #d9c1c1;
     text-decoration:none;
@@ -94,3 +96,32 @@ main {
         }
     }
 }
+
+.about-info {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-areas: "bioimage bio bio";
+    grid-template-columns: repeat(3, 1fr);
+
+    .bio-img {
+        grid-area: bioimage;
+        margin: auto;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        border: 3px $secondary-color solid;
+    }
+
+    .bio {
+        grid-area: bio;
+        font-size: 1rem;
+        background: rgba($primary-color, 0.6);
+        padding: 0.5rem;
+        border-bottom: 5px $secondary-color solid;
+        p {
+            text-align: left;
+        }
+    }
+}
+
+@import 'mobile';
