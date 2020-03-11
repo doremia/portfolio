@@ -55,9 +55,9 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/choba.jpg");
       border-radius: 50%;
-      border: solid 3px #e58181; }
+      border: solid 3px #e58181;
+      object-fit: center; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -152,8 +152,10 @@ main {
       main .icons a:hover {
         color: #e58181;
         transition: all 0.5s ease-out; }
-  main #about {
+  main#about {
     padding-top: 0; }
+  main#contact .info {
+    padding-top: 1rem; }
 
 .about-info {
   display: grid;
@@ -164,9 +166,10 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    height: 250px;
+    height: 330px;
     width: 250px;
-    border: 3px #e58181 solid; }
+    border: 3px #e58181 solid;
+    object-fit: center; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1rem;
@@ -175,6 +178,13 @@ main {
     border-bottom: 5px #e58181 solid; }
     .about-info .bio p {
       text-align: left; }
+
+.whispering {
+  font-size: 0.8rem; }
+
+.boxes {
+  padding-left: 80vh;
+  text-align: left; }
 
 .all-projects {
   display: grid;

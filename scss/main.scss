@@ -72,7 +72,6 @@ main {
         
         object-fit: cover;
         object-position: center right;
-
     }
 
     &#home {
@@ -97,9 +96,16 @@ main {
         }
     }
 
-    #about {
+    &#about {
         padding-top:0;
     }
+
+    &#contact {
+        .info {
+            padding-top: 1rem;
+        }
+    }
+
 }
 // About me 
 .about-info {
@@ -112,9 +118,10 @@ main {
         grid-area: bioimage;
         margin: auto;
         border-radius: 50%;
-        height: 250px;
+        height: 330px;
         width: 250px;
         border: 3px $secondary-color solid;
+        object-fit: center;
     }
 
     .bio {
@@ -127,6 +134,16 @@ main {
             text-align: left;
         }
     }
+}
+
+.whispering {
+    font-size: 0.8rem;
+}
+
+.boxes {
+    padding-left: 80vh;
+    text-align: left;
+
 }
 
 // All projects
