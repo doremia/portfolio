@@ -171,7 +171,7 @@ main {
     height: 330px;
     width: 250px;
     border: 3px #e58181 solid;
-    object-fit: center; }
+    object-fit: cover; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1rem;
