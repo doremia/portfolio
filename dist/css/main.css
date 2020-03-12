@@ -154,6 +154,8 @@ main {
         transition: all 0.5s ease-out; }
   main#about {
     padding-top: 0; }
+    main#about h2 {
+      margin-bottom: 0; }
   main#contact .info {
     padding-top: 1rem; }
 
@@ -174,10 +176,12 @@ main {
     grid-area: bio;
     font-size: 1rem;
     background: rgba(254, 254, 253, 0.6);
-    padding: 1.5rem;
+    padding: 1rem;
     border-bottom: 5px #e58181 solid; }
     .about-info .bio p {
-      text-align: left; }
+      text-align: left;
+      margin-block-start: 0.65em;
+      margin-block-end: 0.65em; }
 
 .whispering {
   font-size: 0.8rem; }

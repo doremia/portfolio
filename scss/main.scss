@@ -98,6 +98,9 @@ main {
 
     &#about {
         padding-top:0;
+        h2 {
+            margin-bottom: 0;
+        }
     }
 
     &#contact {
@@ -128,10 +131,12 @@ main {
         grid-area: bio;
         font-size: 1rem;
         background: rgba($primary-color, 0.6);
-        padding: 1.5rem;
+        padding: 1rem;
         border-bottom: 5px $secondary-color solid;
         p {
             text-align: left;
+            margin-block-start: 0.65em;
+            margin-block-end: 0.65em;
         }
     }
 }
